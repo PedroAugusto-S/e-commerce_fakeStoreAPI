@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">PEDRO E-COMMERCE</a>
+        <nav>
+            <a href="index.html">Voltar</a>
+        </nav>
+        <a href="carrinho.html" class="botao-carrinho">
+            🛒 <span id="contagem-carrinho">0</span>
+        </a>
+    </header>
+
+    <main id="detalhe-produto" style="display: flex; gap: 40px; padding: 40px; background: #1a1a1a; max-width: 900px; margin: 40px auto; border-radius: 8px; border: 1px solid #333;">
+        <div style="flex: 1;">
+            <img id="img-detalhe" src="" alt="" style="width: 100%; object-fit: contain;">
+        </div>
+        <div sthttps://www.letras.mus.br/turnstile/fly-again/traducao.htmlyle="flex: 1;">
+            <h1 id="titulo-detalhe" style="color: #e0e0e0;">Carregando...</h1>
+            <p id="cat-detalhe" style="color: #999; margin-bottom: 20px;"></p>
+            <p id="desc-detalhe" style="color: #ccc; margin-bottom: 20px; line-height: 1.6;"></p>
+            
+            <h2 id="preco-detalhe" style="margin-bottom: 10px; color: #dc143c;"></h2>
+            <p id="estoque-detalhe" style="color: #dc143c; margin-bottom: 20px;"></p>
+
+            <button id="btn-add-detalhe" class="btn-comprar" style="padding: 15px 30px; font-size: 18px; margin-bottom: 15px;">
+                Adicionar ao Carrinho
+            </button>
+            <br>
+            <a href="carrinho.html" style="color: #dc143c; text-decoration: none; font-weight: bold;">Ver Carrinho →</a>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

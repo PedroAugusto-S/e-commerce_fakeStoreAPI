@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minhas Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">PEDRO E-COMMERCE</a>
+        <nav>
+            <a href="index.html">Voltar para Loja</a>
+        </nav>
+    </header>
+
+    <main style="max-width: 600px; margin: 40px auto; background: #1a1a1a; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+        <h2 style="color: #e0e0e0; margin-bottom: 15px;">Meus Pedidos</h2>
+        <p style="color: #ccc; margin-bottom: 20px;">Digite seu e-mail para consultar suas compras passadas.</p>
+        
+        <form onsubmit="buscarMeusPedidos(event)" style="margin: 20px 0; display: flex; gap: 10px;">
+            <input type="email" id="email-busca" placeholder="seu@email.com" required 
+                   style="padding: 10px; flex: 1; background-color: #121212; color: #e0e0e0; border: 1px solid #dc143c; border-radius: 4px;">
+            <button type="submit" class="btn-comprar" style="padding: 10px 20px;">Buscar</button>
+        </form>
+
+        <hr style="border-color: #333; margin: 20px 0;">
+
+        <div id="lista-pedidos" style="margin-top: 20px;">
+            </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho - PEDRO E-COMMMERCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">PEDRO E-COMMERCE</a>
+        <nav>
+            <a href="index.html">Voltar ao Catálogo</a>
+        </nav>
+    </header>
+
+    <main style="padding: 40px 20px;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1 style="color: #dc143c; margin-bottom: 30px; text-align: center;">Seu Carrinho</h1>
+            
+            <div id="carrinho-container" style="background: #1a1a1a; padding: 30px; border-radius: 8px; border: 1px solid #333;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left; padding: 15px; border-bottom: 2px solid #dc143c; color: #e0e0e0;">Produto</th>
+                            <th style="text-align: center; padding: 15px; border-bottom: 2px solid #dc143c; color: #e0e0e0;">Preço</th>
+                            <th style="text-align: center; padding: 15px; border-bottom: 2px solid #dc143c; color: #e0e0e0;">Qtd</th>
+                            <th style="text-align: center; padding: 15px; border-bottom: 2px solid #dc143c; color: #e0e0e0;">Subtotal</th>
+                            <th style="text-align: center; padding: 15px; border-bottom: 2px solid #dc143c; color: #e0e0e0;">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-carrinho">
+                    </tbody>
+                </table>
+
+                <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #333; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="font-size: 1.3em; font-weight: bold; color: #e0e0e0;">
+                        Total: <span id="valor-total" style="color: #dc143c;">R$ 0,00</span>
+                    </div>
+                    <button class="btn-comprar" id="btn-checkout" onclick="window.location.href='checkout.html'" style="width: auto; padding: 12px 40px; font-size: 16px;">
+                        Ir para Checkout
+                    </button>
+                </div>
+            </div>
+            
+            <p id="msg-carrinho-vazio" style="display: none; text-align: center; color: #999; padding: 40px; font-size: 18px;">
+                Seu carrinho está vazio. <a href="index.html" style="color: #dc143c; text-decoration: none; font-weight: bold;">Voltar ao Catálogo</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        
+        renderizarCarrinho();
+    </script>
+</body>
+</html>

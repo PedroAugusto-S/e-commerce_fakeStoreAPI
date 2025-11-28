@@ -1,0 +1,268 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #121212;
+    border-bottom: 2px solid #dc143c;
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #dc143c;
+}
+
+nav a { 
+    margin: 0 15px; 
+    text-decoration: none; 
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #dc143c;
+}
+
+.filtros {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #121212;
+}
+
+.filtros button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #e0e0e0;
+    transition: color 0.2s;
+}
+
+.filtros button:hover { 
+    color: #dc143c;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0px;
+    transition: transform 0.2s, border-color 0.2s;
+    border: 1px solid #333;
+}
+
+.card:hover { 
+    transform: translateY(-5px);
+    border-color: #dc143c;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card h3 { 
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    height: 40px; 
+    overflow: hidden;
+    color: #e0e0e0;
+}
+
+.card p { 
+    color: #999; 
+    font-size: 14px; 
+    margin-bottom: 10px; 
+}
+
+.card .preco { 
+    font-weight: bold; 
+    font-size: 18px; 
+    display: block; 
+    margin-bottom: 15px;
+    color: #dc143c;
+}
+
+.btn-comprar {
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover { 
+    background-color: #ff1744;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: transparent;
+}
+
+th, td { 
+    padding: 12px 15px; 
+    text-align: left; 
+    border-bottom: 1px solid #333;
+    color: #e0e0e0;
+}
+
+th { 
+    background-color: transparent;
+    border-bottom: 2px solid #dc143c;
+    font-weight: bold;
+}
+
+.total-box { 
+    text-align: right; 
+    padding: 20px; 
+    background: #1a1a1a;
+    margin-top: 20px; 
+    font-size: 1.2em; 
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.btn-qty { 
+    padding: 5px 10px; 
+    background: #333; 
+    border: 1px solid #dc143c; 
+    cursor: pointer;
+    color: #e0e0e0;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn-qty:hover {
+    background-color: #dc143c;
+}
+
+.btn-remove { 
+    color: #dc143c; 
+    cursor: pointer; 
+    border: none; 
+    background: none; 
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.btn-remove:hover {
+    color: #ff1744;
+}
+
+.form-checkout { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.form-group input { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #dc143c;
+    background-color: #121212;
+    color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff1744;
+    box-shadow: 0 0 5px rgba(220, 20, 60, 0.5);
+}
+
+.botao-carrinho {
+    text-decoration: none;
+    background-color: #dc143c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+}
+
+.botao-carrinho:hover {
+    background-color: #ff1744;
+}
+
+.area-busca {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.area-busca input {
+    padding: 8px;
+    border: 1px solid #dc143c;
+    border-radius: 4px;
+    width: 250px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.area-busca input:focus {
+    outline: none;
+    border-color: #ff1744;
+}
+
+.area-busca button {
+    padding: 8px 12px;
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.area-busca button:hover {
+    background-color: #ff1744;
+}

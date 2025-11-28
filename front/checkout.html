@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - PEDRO E-COMMERCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">PEDRO E-COMMERCE</a>
+        <nav>
+            <a href="carrinho.html">Voltar ao Carrinho</a>
+        </nav>
+    </header>
+
+    <main style="padding: 40px 20px;">
+        <div class="form-checkout">
+            <h2 style="color: #dc143c; margin-bottom: 30px; text-align: center;">Finalizar Compra</h2>
+            
+            <div id="resumo-checkout" style="margin-bottom: 30px; padding: 20px; background: #121212; border-radius: 8px; border: 1px solid #333; color: #e0e0e0;">
+            </div>
+
+            <form onsubmit="finalizarCompra(event)">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" id="cliente-nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="cliente-email" placeholder="seu@email.com" required>
+                </div>
+                
+                <button type="submit" class="btn-comprar" style="padding: 15px; font-size: 16px; margin-top: 20px;">
+                    CONFIRMAR PEDIDO
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        atualizarResumoCheckout();
+    </script>
+</body>
+</html>
